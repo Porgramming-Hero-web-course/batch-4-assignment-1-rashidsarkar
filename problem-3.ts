@@ -7,9 +7,7 @@
     let findWord: string[] = sentenArr.filter((item: string) => {
       return item.toLowerCase().includes(word.toLowerCase());
     });
-    // console.log(findWord);
 
-    // console.log(sentenArr);
     console.log(findWord.length);
     return findWord.length;
   };
