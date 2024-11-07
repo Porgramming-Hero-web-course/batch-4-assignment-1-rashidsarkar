@@ -15,13 +15,13 @@
     } else if (typeArea.shape === "rectangle") {
       result = typeArea.height * typeArea.width;
     }
-
+    console.log(+result.toFixed(2));
     return +result.toFixed(2);
   };
-  const circleArea = calculateShapeArea({ radius: 5, shape: "circle" });
+  const circleArea = calculateShapeArea({ shape: "circle", radius: 5 });
   const rectangleArea = calculateShapeArea({
-    width: 4,
     shape: "rectangle",
+    width: 4,
     height: 6,
   });
 }

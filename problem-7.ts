@@ -11,7 +11,6 @@
     }
     getCarAge() {
       const carAge: number = new Date().getFullYear() - this.year;
-      //   console.log(`${carAge} (assuming current year is 2024)`);
       console.log(carAge);
       return carAge;
     }

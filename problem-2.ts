@@ -9,5 +9,5 @@
     console.log(resArr);
     return resArr;
   };
-  removeDuplicates([1, 5, 5, 9, 9, 4, 2, 2, 3, 4, 4, 5]);
+  removeDuplicates([1, 2, 2, 3, 4, 4, 5]);
 }

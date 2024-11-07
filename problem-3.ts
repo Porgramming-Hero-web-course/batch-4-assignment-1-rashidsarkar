@@ -1,11 +1,8 @@
 {
   const countWordOccurrences = (sentence: string, word: string): number => {
-    // const result: number = sentence.search(word);
-    // console.log(result);
-    // return result;
     let sentenArr: string[] = sentence.split(" ");
     let findWord: string[] = sentenArr.filter((item: string) => {
-      return item.toLowerCase().includes(word.toLowerCase());
+      return item.toLowerCase().includes(word.toLowerCase().trim());
     });
 
     console.log(findWord.length);

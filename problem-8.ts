@@ -12,7 +12,7 @@
       }
     });
     let num = 0;
-    let res = resArr.forEach((item) => {
+    resArr.forEach((item) => {
       if (item) num++;
     });
     if (num == keys.length) {
@@ -21,6 +21,6 @@
       return false;
     }
   };
-  //   const person = { name: "Alice", age: 25, email: "alice@example.com",  };
-  //   console.log(validateKeys(person, ["name", "age"]));
+  const person = { name: "Alice", age: 25, email: "alice@example.com" };
+  console.log(validateKeys(person, ["name", "age"]));
 }
