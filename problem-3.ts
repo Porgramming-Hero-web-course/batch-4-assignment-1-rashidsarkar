@@ -1,13 +1,17 @@
 {
   const countWordOccurrences = (sentence: string, word: string): number => {
+    const myPeraLoar: string = word.trim().toLowerCase();
+    let totalMatch: number = 0;
     let sentenArr: string[] = sentence.split(" ");
-    let findWord: string[] = sentenArr.filter((item: string) => {
-      return item.toLowerCase().includes(word.toLowerCase().trim());
+    let regexWord = new RegExp(`\\b${myPeraLoar}\\b`, "g");
+    sentenArr.forEach((item) => {
+      if (item.match(regexWord)) {
+        totalMatch++;
+      }
     });
-
-    console.log(findWord.length);
-    return findWord.length;
+    console.log(totalMatch);
+    return totalMatch;
   };
 
-  countWordOccurrences("TypeScript is great. I love TypeScript!", "typescript");
+  countWordOccurrences("I love typescript", "typescript");
 }
