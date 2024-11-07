@@ -5,7 +5,7 @@
     let sentenArr: string[] = sentence.split(" ");
     let regexWord = new RegExp(`\\b${myPeraLoar}\\b`, "g");
     sentenArr.forEach((item) => {
-      if (item.match(regexWord)) {
+      if (item.toLowerCase().match(regexWord)) {
         totalMatch++;
       }
     });
